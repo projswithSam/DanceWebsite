@@ -1,0 +1,44 @@
+extends base.pug 
+
+block scripts
+  script(src='/static/index.js')
+block style 
+    style
+      include ../static/style.css
+
+block content  
+    section#introSection
+        div Welcome to Samyak's Dance Academy 
+        div.small Live Learn Dance Repeat 
+    section#missionSection
+        h2 Our Mission
+        div.card
+            h3 Dance Perfection  
+            div.card-box 
+                div.card-img
+                    img(src="/static/img/2.jpg")
+                div.card-content 
+                    p This is the best dance academy of the country  
+        div.card
+            h3 Dance the way you Like 
+            div.card-box
+                div.card-img
+                    img(src="/static/img/4.jpg")
+                div.card-content 
+                    p This is the best dance academy of the country
+        div.card
+            h3 Expert Teaching  
+            div.card-box
+                div.card-img
+                    img(src="/static/img/5.jpg")
+                div.card-content 
+                    p This is the best dance academy of the country
+            
+    section#sponsorSection
+        h2 Our sponsors 
+        div#sponsors 
+            img(src="/static/img/logo4.png" alt="Sponsor Image", class="spImage")
+            img(src="/static/img/logo5.png" alt="Sponsor Image", class="spImage")
+            img(src="/static/img/logo6.png" alt="Sponsor Image", class="spImage")
+            img(src="/static/img/logo7.png" alt="Sponsor Image", class="spImage")
+    
